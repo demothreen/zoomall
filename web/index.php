@@ -22,12 +22,32 @@ Flight::route('POST /', function() {
     $db = Flight::db();
     $name = $_POST['name'];
     $category = $_POST['category'];
-    var_dump($_POST);
+
     $db->exec(sprintf(
-        'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
-        implode(',', ['name', 'category']),
-        implode('","', [$name, $category])
-    ));
+            'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
+            implode(',', ['name', 'category']),
+            implode('","', [$name, $category])
+        ));
+
+        function dbInsert($element){
+            if ((isset($_POST['name'])) && (trim($_POST['name']) != ''))
+                $element = $_POST['name'];
+
+            if ((isset($_POST['category'])) && (!empty($_POST['category']))){
+
+                }
+                if ((isset($_POST['sub[]'])) && (!empty($_POST['sub[]'])))
+                    foreach (($_POST['category']) as $value){
+                        $element = $value;
+            }
+                return sprintf(
+                    'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
+                    implode(',', array_keys($element)),
+                    implode('","', array_values($element))
+                );
+        }
+
+
     Flight::redirect('/');
     exit();
 });

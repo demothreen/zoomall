@@ -11,17 +11,17 @@
     <input type="text" name="name" placeholder="Введите запрос"><br>
     <select name="category">
     <option>Выберите категорию</option>
-        <option value="category">Животное</option><br>
-        <option value="category">Корм</option><br>
-        <option value="category">Сопутствующий товар</option><br>
+        <option value="enimal">Животное</option><br>
+        <option value="food">Корм</option><br>
+        <option value="product">Сопутствующий товар</option><br>
     </select><br><br>
     <label>Выберите подкатегорию</label><br>
-    <input type="checkbox" name="rodent">грызуны
-    <input type="checkbox" name="amphibia">земноводные
-    <input type="checkbox" name="reptile">рептилии
-    <input type="checkbox" name="fish">рыбы
-    <input type="checkbox" name="cat">кошки
-    <input type="checkbox" name="dog">собаки<br>
+    <input type="checkbox" name="sub[rodent]">грызуны
+    <input type="checkbox" name="sub[amphibia]">земноводные
+    <input type="checkbox" name="sub[reptile]">рептилии
+    <input type="checkbox" name="sub[fish]">рыбы
+    <input type="checkbox" name="sub[cat]">кошки
+    <input type="checkbox" name="sub[dog]">собаки<br>
     <input type="submit" name="submit" value="Отправить">
 </form>
 </body>
