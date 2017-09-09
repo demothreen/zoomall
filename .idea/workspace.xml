@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f652445e-d91b-43d2-acd0-45d520f33186" name="Default" comment="" />
+    <list default="true" id="f652445e-d91b-43d2-acd0-45d520f33186" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/main.db" afterPath="$PROJECT_DIR$/db/main.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/zoo.iml" afterPath="$PROJECT_DIR$/.idea/zoo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +22,22 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
-                <element signature="e#6#201#0#PHP" expanded="true" />
-                <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-                <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+                <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+                <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -31,19 +45,22 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/zooshop/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+            <state relative-caret-position="682">
+              <caret line="134" column="21" lean-forward="false" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="31" />
               <folding>
-                <marker date="1503855230314" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
-                <marker date="1503855230314" expanded="true" signature="2323:2353" ph="SELECT * FRO... ${$table}" />
-                <marker date="1503855230314" expanded="true" signature="3534:3575" ph="INSERT INTO ${$table}... " />
-                <marker date="1503855230314" expanded="true" signature="3845:3875" ph="DELETE FROM " />
+                <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+                <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+                <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+                <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,9 +86,10 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="710" />
     <option name="y" value="-4" />
-    <option name="width" value="1210" />
-    <option name="height" value="1084" />
+    <option name="width" value="1208" />
+    <option name="height" value="1076" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -88,7 +106,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,12 +116,18 @@
             <path>
               <item name="zoo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zoo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zoo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,21 +160,23 @@
       <workItem from="1504333537458" duration="2734000" />
       <workItem from="1504446143860" duration="6536000" />
       <workItem from="1504548467131" duration="5756000" />
+      <workItem from="1504968980580" duration="3000" />
+      <workItem from="1504969030555" duration="6180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17275000" />
+    <option name="totallyTimeSpent" value="23458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="-4" width="1875" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18613334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07413334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -182,9 +207,56 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
-            <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-            <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/zooshop/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding>
+            <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+            <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+            <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+            <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/zooshop/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding>
+            <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+            <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+            <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+            <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
           </folding>
         </state>
       </provider>
@@ -194,10 +266,10 @@
         <state relative-caret-position="342">
           <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <marker date="1503855230314" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
-            <marker date="1503855230314" expanded="true" signature="2323:2353" ph="SELECT * FRO... ${$table}" />
-            <marker date="1503855230314" expanded="true" signature="3534:3575" ph="INSERT INTO ${$table}... " />
-            <marker date="1503855230314" expanded="true" signature="3845:3875" ph="DELETE FROM " />
+            <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+            <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+            <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+            <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -207,9 +279,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
-            <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-            <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
           </folding>
         </state>
       </provider>
@@ -219,29 +290,22 @@
         <state relative-caret-position="36">
           <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
-            <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-            <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/index.php" />
     <entry file="file://$USER_HOME$/zooshop/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1503855230314" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
-            <marker date="1503855230314" expanded="true" signature="2323:2353" ph="SELECT * FRO... ${$table}" />
-            <marker date="1503855230314" expanded="true" signature="3534:3575" ph="INSERT INTO ${$table}... " />
-            <marker date="1503855230314" expanded="true" signature="3845:3875" ph="DELETE FROM " />
+            <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+            <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+            <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+            <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -258,9 +322,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
-            <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-            <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
           </folding>
         </state>
       </provider>
@@ -273,56 +336,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/Flight.php">
+    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/Flight.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/Engine.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/autoload.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/index.php" />
+    <entry file="file://$PROJECT_DIR$/views/form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/Engine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2286">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/flight/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mikecao/flight/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/zooshop/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+        <state relative-caret-position="682">
+          <caret line="134" column="21" lean-forward="false" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="31" />
           <folding>
-            <marker date="1503855230314" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
-            <marker date="1503855230314" expanded="true" signature="2323:2353" ph="SELECT * FRO... ${$table}" />
-            <marker date="1503855230314" expanded="true" signature="3534:3575" ph="INSERT INTO ${$table}... " />
-            <marker date="1503855230314" expanded="true" signature="3845:3875" ph="DELETE FROM " />
+            <marker date="1504806565316" expanded="true" signature="389:683" ph="CREATE TABLE... IF" />
+            <marker date="1504806565316" expanded="true" signature="2324:2354" ph="SELECT * FRO... ${$table}" />
+            <marker date="1504806565316" expanded="true" signature="3535:3576" ph="INSERT INTO ${$table}... " />
+            <marker date="1504806565316" expanded="true" signature="3846:3876" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
-            <marker date="1504631633335" expanded="true" signature="1329:1342" ph="select * fro... ..." />
-            <marker date="1504631633335" expanded="true" signature="1329:1352" ph="select * fro... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="395:418" ph="SELECT * FRO... zoomall" />
+            <marker date="1504975184184" expanded="true" signature="963:1001" ph="INSERT INTO ZOOMALL... " />
           </folding>
         </state>
       </provider>

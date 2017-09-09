@@ -22,45 +22,33 @@ Flight::route('POST /', function() {
     $db = Flight::db();
     $name = $_POST['name'];
     $category = $_POST['category'];
+    $sub = $_POST['sub'];
+
+
+    if ((isset($name)) && (trim($name) != '')){
+        $element['name'] = $name;
+    };
+
+    if ((isset($category)) && !empty($category)){
+        $element['category'] = $category;
+    }
+
+    if ((isset($sub)) && !empty($sub))
+        foreach ($sub as $key => $value){
+        $element[$key] = $value;
+        }
 
     $db->exec(sprintf(
-            'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
-            implode(',', ['name', 'category']),
-            implode('","', [$name, $category])
-        ));
+        'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
+        implode(',', array_keys($element)),
+        implode('","', array_values($element))
+    ));
 
-        function dbInsert($element){
-            if ((isset($_POST['name'])) && (trim($_POST['name']) != ''))
-                $element = $_POST['name'];
-
-            if ((isset($_POST['category'])) && (!empty($_POST['category']))){
-
-                }
-                if ((isset($_POST['sub[]'])) && (!empty($_POST['sub[]'])))
-                    foreach (($_POST['category']) as $value){
-                        $element = $value;
-            }
-                return sprintf(
-                    'INSERT INTO ZOOMALL (%s) VALUES ("%s")',
-                    implode(',', array_keys($element)),
-                    implode('","', array_values($element))
-                );
-        }
 
 
     Flight::redirect('/');
     exit();
 });
-
-//$name = $_POST['name'];
-//$category = $_POST['category'];
-//$db = Flight::db();
-//$db->exec("INSERT INTO ZOOMALL ('name', 'category') VALUES ($name,$category)");
-/*$db->exec(sprintf(
-    'INSERT INTO '. zoomall .' (%s) VALUES ("%s")',
-    implode(',', ['name', 'category']),
-    implode('","', [$name, $category])
-));*/
 
 
 
