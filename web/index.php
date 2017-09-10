@@ -9,14 +9,15 @@ Flight::register('db', 'PDO', ['sqlite:./../db/main.db'], function($db) {
 });
 
 Flight::route('GET /', function() {
-    Flight::render('form.php');
+    $db = Flight::db();
+    Flight::render('form.php', [], 'cont');
+    Flight::render('table.php', ['result' => $db->query('select * from ZOOMALL')]);
 });
 
-Flight::route('GET /', function() {
-    $db = Flight::db();
-    $result = $db->query('SELECT * FROM `zoomall`');
-    //var_dump($result->fetchAll());
-});
+
+/*
+ * добавление данных в таблицу
+ */
 
 Flight::route('POST /', function() {
     $db = Flight::db();
@@ -44,41 +45,10 @@ Flight::route('POST /', function() {
         implode('","', array_values($element))
     ));
 
-
-
     Flight::redirect('/');
     exit();
 });
 
 
-
 Flight::start();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
