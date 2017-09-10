@@ -11,7 +11,9 @@ Flight::register('db', 'PDO', ['sqlite:./../db/main.db'], function($db) {
 Flight::route('GET /', function() {
     $db = Flight::db();
     Flight::render('form.php', [], 'cont');
-    Flight::render('table.php', ['result' => $db->query('select * from ZOOMALL')]);
+    Flight::render('table.php',
+        ['result' => $db->query('select * from ZOOMALL')]
+    );
 });
 
 
@@ -47,6 +49,18 @@ Flight::route('POST /', function() {
 
     Flight::redirect('/');
     exit();
+});
+
+/*
+ * удаление записи при нажатии кнопки Удалить
+ */
+
+Flight::route('POST /delete', function() {
+    $db = Flight::db();
+    $db->exec("DELETE FROM ZOOMALL where id = {$_POST['id']}");
+
+    Flight::redirect('/');
+
 });
 
 

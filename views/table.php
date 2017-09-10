@@ -1,11 +1,10 @@
 <?= $cont;?>
 
 <?php
-while($row = $result->fetch()) {
+foreach($result as $row) {
 ?>
 
 <table border=1>
-
     <tr><td>id</td><td>name</td><td>category</td><td>rodent</td>
         <td>amphibia</td><td>reptile</td><td>fish</td><td>cat</td><td>dog</td></tr>
     <tr><td><?= $row['id'] ?></td>
@@ -16,9 +15,14 @@ while($row = $result->fetch()) {
         <td><?= $row['reptile'] ?></td>
         <td><?= $row['fish'] ?></td>
         <td><?= $row['cat'] ?></td>
-        <td><?= $row['dog'] ?></td></tr>
-
-</table>
+        <td><?= $row['dog'] ?></td>
+        <td>
+            <form method='post' action='/delete'>
+            <input type='hidden' name='id' value="<?= $row['id'] ?>">
+            <input type="submit" name="del" value="удалить">
+            </form>
+        </td>
+    </tr>
 
     <?php
 }
