@@ -1,13 +1,13 @@
 <?= $cont;?>
-
-<?php
-foreach($result as $row) {
-?>
-
+ 
 <table border=1>
     <tr><td>id</td><td>name</td><td>category</td><td>rodent</td>
         <td>amphibia</td><td>reptile</td><td>fish</td><td>cat</td><td>dog</td></tr>
-    <tr><td><?= $row['id'] ?></td>
+    <tr>
+<?php
+foreach($result as $row) {
+?>
+	<td><?= $row['id'] ?></td>
         <td><?= $row['name'] ?></td>
         <td><?= $row['category'] ?></td>
         <td><?= $row['rodent'] ?></td>
@@ -23,6 +23,11 @@ foreach($result as $row) {
             </form>
         </td>
     </tr>
+ 
+
 
     <?php
-}
+} 
+?>
+
+</table>
