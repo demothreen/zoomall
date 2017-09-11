@@ -6,7 +6,7 @@
 </head>
 <body>
 <H1>Это зоомагазин</H1>
-<form method="post">
+<form action="<?=$action?>" method=<?=$method?>>
     <label>Что ищем?</label>
     <input type="text" name="name" placeholder="Введите запрос"><br>
     <select name="category">
@@ -23,6 +23,7 @@
     <input type="checkbox" name="sub[cat]">кошки
     <input type="checkbox" name="sub[dog]">собаки<br>
     <input type="submit" name="submit" value="Отправить">
+    <input type="submit" name="search" value="Поиск">
 </form>
 </body>
 </html>
