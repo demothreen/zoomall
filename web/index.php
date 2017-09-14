@@ -13,8 +13,8 @@ Flight::route('GET /', function() {
     $sql = 'select * from zoomall where 1=1';
 
     if ((isset($_GET['name'])) && (trim($_GET['name']) != '')){
-        $lowerName = strtolower($_GET['name']);
-        $sql .= " AND UPPER(name) LIKE '%{$lowerName}%' ";
+        $lowerName = mb_strtolower($_GET['name']);
+        $sql .= " AND LOWER(name) LIKE '%{$lowerName}%' ";
     };
 
     if (isset($_GET['category'])) {
