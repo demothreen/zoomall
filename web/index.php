@@ -12,9 +12,22 @@ Flight::route('GET /', function() {
     $db = Flight::db();
     $sql = 'select * from zoomall where 1=1';
 
+    if ((isset($_GET['name'])) && (trim($_GET['name']) != '')){
+        $lowerName = strtolower($_GET['name']);
+        $sql .= " AND UPPER(name) LIKE '%{$lowerName}%' ";
+    };
+
     if (isset($_GET['category'])) {
        $sql .= " and category = '{$_GET['category']}'";
+    };
+
+    if ((isset($_GET['sub'])) && !empty($_GET['sub'])) {
+        $subcat = [];
+    foreach ($_GET['sub'] as $key => $value) {
+        $subcat[] = "$key = '{$value}'";
     }
+    $sql .= ' AND ('. implode(" OR ", $subcat) . ')';
+    };
 
 
     Flight::render('form.php', ['method' => 'post', 'action' => '',  'showSearchLink' => true], 'cont');
@@ -60,40 +73,7 @@ Flight::route('POST /', function() {
     Flight::redirect('/');
     exit();
 });
-/*
- * поиск по элементам
- */
-/*
-Flight::route('GET /', function() {
-    $db = Flight::db();
-    $name = $_POST['name'];
-    $category = $_POST['category'];
-    $sub = $_POST['sub'];
-    $sql = $db->query("SELECT * FROM ZOOMALL WHERE 1=1 ");
 
-
-    if ((isset($name)) && (trim($name) != '')){
-        $lowerName = mb_strtolower($name);
-        $sql .= "AND UPPER(name) LIKE '%{$lowerName}%' ";
-    };
-
-    if ((isset($category)) && !empty($category)){
-        $andIn = 'AND category IN (' . "'" . implode("','", $category) . "'" . ') ';
-        $sql .= $andIn;
-    }
-
-    if ((isset($sub)) && !empty($sub)) {
-        $subcat = [];
-    foreach ($sub as $key => $value) {
-        $subcat[] = "$key = '{$value}'";
-    }
-    $sql .= 'AND ('. implode(" OR ", $subcat) . ')';
-        }
-
-    return $sql;
-
-});
-*/
 
 /*
  * удаление записи при нажатии кнопки Удалить

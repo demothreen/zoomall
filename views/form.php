@@ -10,7 +10,7 @@
     <label>Что ищем?</label>
     <input type="text" name="name" placeholder="Введите запрос"><br>
     <select name="category">
-    <option value="choice" disabled>Выберите категорию</option>
+    <option selected disabled>Выберите категорию</option>
         <option value="enimal">Животное</option><br>
         <option value="food">Корм</option><br>
         <option value="product">Сопутствующий товар</option><br>
@@ -24,7 +24,7 @@
     <input type="checkbox" name="sub[dog]">собаки<br>
     <input type="submit" name="submit" value="Отправить">
     <?php if(isset($showSearchLink) && $showSearchLink): ?>
-      <a href="/search">Поиск</>
+      <a href="/search">Поиск</a>
     <?php endif; ?>
 </form>
 </body>
