@@ -11,16 +11,14 @@ Flight::register('db', 'PDO', ['sqlite:./../db/main.db'], function($db) {
 Flight::route('GET /', function() {
     $db = Flight::db();
     $sql = 'select * from zoomall where 1=1';
-
     if ($_GET['category']) {
-        $sql .= " and category = '{$_GET['category']}'";
+        $sql .= "and category = '{$_GET['category']}'";
     }
-    Flight::render('form.php', ['method' => 'post'], 'cont');
+    Flight::render('form.php', ['method' => 'post', 'action' => ''], 'cont');
     Flight::render('table.php',
-        ['result' => $db->query($sql)]
+        ['result' => $db->query('select * from zoomall')]
     );
 });
-
 Flight::route('GET /search', function() {
     Flight::render('form.php', ['method' => 'get', 'action' => '/']);
     });
@@ -107,4 +105,3 @@ Flight::route('POST /delete', function() {
 
 
 Flight::start();
-
